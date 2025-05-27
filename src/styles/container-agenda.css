@@ -1,14 +1,12 @@
 .container {
   display: flex;
   justify-content: center;
-  border: 1px solid green;
 
   .container_agenda {
     width: 817px;
     height: 768px;
 
     .container_header {
-      border: 1px solid gray;
       display: flex;
       justify-content: space-between;
 
@@ -16,10 +14,67 @@
         h1 {
           color: var(--color-content-primary);
           font: var(--font-title);
+          margin-bottom: 4px;
         }
         p {
+          color: var(--color-content-secondary);
+          font: var(--font-paragraph-medium);
         }
       }
     }
+  }
+
+  .header_text-field {
+    img {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    input {
+      background-color: transparent;
+      color: var(--color-content-secondary);
+      font: var(--font-paragraph-medium);
+      border: none;
+    }
+  }
+
+  .header_text-field .calendar {
+    left: 32px;
+  }
+
+  .header_text-field input[type="date"] {
+    padding: 8px 12px;
+    padding-right: 30px; /* espaço para não colidir com o arrow */
+    padding-left: 40px;
+    border: 1px solid var(--color-content-secondary);
+
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /* Esconde o ícone nativo */
+  .header_text-field input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Ajuste opcional para o ícone de arrow */
+  .header_text-field img:last-of-type {
+    right: 30px;
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
   }
 }
