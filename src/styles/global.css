@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors: */
+  --color-content-primary: #ffffff;
+  --color-content-secondary: #98959d;
+  --color-content-tertiary: #666666;
+  -color-content-brand: #9282fa;
+
+  --color-background-primary: #151515;
+  --color-background-secondary: #1e1e1e;
+  --color-background-tertiary: #23242c;
+  --color-background-brande: #9282fa;
+  --color-background-highlights: #bdb4fa;
+
+  --color-border-primary: #3e3c41;
+  --color-border-secondary: #86818c;
+  --color-border-brand: #9282fa;
+  --color-border-divisor: #353339;
+
+  --color-accent-blue: #027df0;
+  --color-accent-blue-light: #16487a;
+  --color-accent-yellow: #f0dc02;
+  --color-accent-yellow-light: #756e1b;
+  --color-accent-orange: #f09102;
+  --color-accent-orange-light: #75501b;
+
+  /* Typography */
+  --font-family-title: "Inter Tight", sans-serif;
+  --font-title: 700 1.5rem/2rem var(--font-family-title);
+
+  --font-family-default: "Inter", sans-serif;
+  --font-paragraph-medium: 500 0.875rem/1.5rem var(--font-family-default);
+  --font-paragraph-small: 500 0.75rem/1rem var(--font-family-default);
+  --font-label-large: 700 1rem/1.5rem var(--font-family-default);
+  --font-label-medium: 700 0.875rem/1.5rem var(--font-family-default);
+  --font-label-small: 700 0.75rem/1rem var(--font-family-default);
+  --font-link: 500 0.75rem/1rem var(--font-family-default);
+  --font-placeholder: 400 1rem/1.5rem var(--font-family-default);
+}
+
+body {
+  background-color: #14151d;
+}
