@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+
+  .container_agenda {
+    width: 817px;
+    height: 768px;
+
+    .container_header {
+      border: 1px solid gray;
+      display: flex;
+      justify-content: space-between;
+
+      .header_title {
+        h1 {
+          color: var(--color-content-primary);
+          font: var(--font-title);
+        }
+        p {
+        }
+      }
+    }
+  }
+}

@@ -44,5 +44,7 @@
 }
 
 body {
+  flex-direction: row;
+  justify-content: center;
   background-color: #14151d;
 }
