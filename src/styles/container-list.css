@@ -54,11 +54,24 @@
         li {
           display: flex;
           justify-content: space-between;
+          border-bottom: 1px solid rgba(145, 143, 143, 0.1);
+          padding-top: 15px;
+          padding-bottom: 20px;
+
           color: var(--color-content-primary);
           p {
             font: var(--font-paragraph-medium);
             color: var(--color-content-secondary);
           }
+          .client_need {
+            justify-content: space-between;
+            width: 60%;
+            display: flex;
+            text-align: center;
+          }
+        }
+        li:first-child {
+          border-bottom: none;
         }
       }
     }
