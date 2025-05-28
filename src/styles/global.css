@@ -48,3 +48,7 @@ body {
   justify-content: center;
   background-color: #14151d;
 }
+
+ul {
+  list-style: none;
+}

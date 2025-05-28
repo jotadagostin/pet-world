@@ -1,10 +1,12 @@
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   .container_agenda {
-    width: 817px;
-    height: 768px;
+    width: 711px;
+    height: 60px;
 
     .container_header {
       display: flex;
@@ -51,11 +53,11 @@
   }
 
   .header_text-field input[type="date"] {
-    padding: 8px 12px;
-    padding-right: 30px; /* espaço para não colidir com o arrow */
-    padding-left: 40px;
+    padding-right: 10px; /* espaço para não colidir com o arrow */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid var(--color-content-secondary);
-
     border-radius: 4px;
     font-size: 14px;
   }

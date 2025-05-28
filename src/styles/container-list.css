@@ -1,0 +1,74 @@
+.container_list {
+  margin-top: 30px;
+  .container_morning {
+    width: 711px;
+    height: auto;
+    background-color: var(--color-background-tertiary);
+    border-radius: 10px;
+
+    .morning_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--color-content-secondary);
+
+      .header_icon {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--color-content-primary);
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        h2 {
+          font: var(--font-title);
+        }
+      }
+      h3 {
+        color: var(--color-content-secondary);
+        font: var(--font-title);
+      }
+    }
+
+    .container_clients {
+      .client_hour {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        h2 {
+          font: var(--font-paragraph-medium);
+          color: var(--color-content-primary);
+        }
+        h3 {
+          font: var(--font-paragraph-medium);
+          color: var(--color-content-secondary);
+          span {
+            color: var(--color-content-primary);
+          }
+        }
+      }
+      ul {
+        padding: 20px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          color: var(--color-content-primary);
+          p {
+            font: var(--font-paragraph-medium);
+            color: var(--color-content-secondary);
+          }
+        }
+      }
+    }
+  }
+
+  .container_afternoon {
+    margin-top: 12px;
+  }
+
+  .container_night {
+    margin-top: 12px;
+  }
+}
