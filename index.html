@@ -57,7 +57,7 @@
                   <h3><span>Thor</span> / Fernanda Costa</h3>
                 </div>
                 <div class="client_need">
-                  <p >Vaccination</p>
+                  <p>Vaccination</p>
                   <p><button>Remove schedule</button></p>
                 </div>
               </li>
@@ -80,7 +80,7 @@
                   <h3><span>Mel</span> / Joao Souza</h3>
                 </div>
                 <div class="client_need">
-                  <p >Nail cutting</p>
+                  <p>Nail cutting</p>
                   <p><button>Remove schedule</button></p>
                 </div>
               </li>
@@ -90,7 +90,7 @@
                   <h3><span>Mel</span> / Joao Souza</h3>
                 </div>
                 <div class="client_need">
-                  <p >Anti-flea application</p>
+                  <p>Anti-flea application</p>
                   <p><button>Remove schedule</button></p>
                 </div>
               </li>
@@ -100,13 +100,12 @@
                   <h3><span>Mel</span> / Joao Souza</h3>
                 </div>
                 <div class="client_need">
-                  <p >Hygienic Grooming</p>
+                  <p>Hygienic Grooming</p>
                   <p><button>Remove schedule</button></p>
                 </div>
               </li>
             </ul>
           </div>
-     
         </div>
         <div class="container_night container_morning">
           <div class="morning_header">
@@ -130,14 +129,68 @@
               </li>
             </ul>
           </div>
-               
-              
         </div>
-        </div>
-        <aside >
-          <button class="button_schedule">NEW SCHEDULE</button>
-        </aside>
       </div>
+      <div class="container_modal hidding" id="modal">
+        <div class="modal-title">
+          <h1>Schedule your appointment</h1>
+          <p>Fill in the customer's details to schedule an appointment:</p>
+        </div>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="tutor-name">Tutor`s name</label>
+            <input
+              type="text"
+              id="tutor-name"
+              name="tutor-name"
+              placeholder="Hele Souza"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="pet-name">Pet`s name</label>
+            <input
+              type="text"
+              id="pet-name"
+              name="pet-name"
+              placeholder="Cheddar"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="fone">Telephone</label>
+            <input
+              type="tel"
+              id="fone"
+              name="fone"
+              placeholder="(00) 000-000"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="service-description">Service description</label>
+            <textarea
+              name="service-description"
+              id="service-description"
+              placeholder="bath and grooming
+"
+              rows="2"
+              required
+            ></textarea>
+          </div>
+          <div class="time-and-hour">
+            <div class="input-wrapper">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="time">Hour</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+          <button type="submit">SCHEDULE</button>
+        </form>
+      </div>
+      <aside>
+        <button class="button_schedule">NEW SCHEDULE</button>
+      </aside>
     </div>
   </body>
 </html>
