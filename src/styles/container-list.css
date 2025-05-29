@@ -62,6 +62,14 @@
           p {
             font: var(--font-paragraph-medium);
             color: var(--color-content-secondary);
+
+            button {
+              background-color: transparent;
+              border: none;
+              font: var(--font-paragraph-medium);
+              color: var(--color-content-secondary);
+              cursor: pointer;
+            }
           }
           .client_need {
             justify-content: space-between;
