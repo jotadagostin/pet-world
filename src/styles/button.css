@@ -14,3 +14,24 @@
   left: 1400px;
   top: 787px;
 }
+
+.button_schedule:hover {
+  background-color: var(--color-background-highlights);
+}
+
+.button_modal {
+  left: 305px;
+  position: absolute;
+  border: 1px solid gray;
+  background: #9282fa;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-background-primary);
+  font: var(--font-button);
+  padding: 12px 24px;
+  margin-top: 40px;
+}
+
+.button_modal:hover {
+  background-color: var(--color-background-highlights);
+}
