@@ -1,4 +1,16 @@
-#modal {
+.container_modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  left: 0;
+  top: -650px;
+
+  width: 477px;
+  height: 716px;
+  background-color: var(--color-background-tertiary);
+  border-radius: 12px;
+  padding: 40px;
   position: relative;
   input[name="tutor-name"] {
     background: url(../assets/user.svg) 0.75rem center/ 1.25rem no-repeat;
@@ -16,15 +28,9 @@
     background: url(../assets/clock.svg) 0.75rem center/ 1.25rem no-repeat;
   }
 
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  width: 477px;
-  height: 716px;
-  background-color: var(--color-background-tertiary);
-  border-radius: 12px;
-  padding: 40px;
+  .container_modal.active {
+    display: block;
+  }
 
   .modal-title {
     display: flex;
