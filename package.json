@@ -1,8 +1,22 @@
 {
-  "script": {
+  "name": "world-pet",
+  "description": "Web app to schedule of pet work",
+  "author": "Joao Paulo Dagostin",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
     "server": "json-server --watch server.json --port 3333"
   },
   "dependencies": {
-    "json-server": "^1.0.0-alpha.21"
+    "json-server": "^1.0.0-alpha.21",
+    "world-pet": "file:",
+    "World-pet": "file:",
+    "worldpet": "file:",
+    "Worldpet": "file:"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
