@@ -27,6 +27,13 @@
   }
 
   .header_text-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    width: 172px;
+    height: 48px;
     img {
       width: 20px;
       height: 20px;
@@ -35,10 +42,6 @@
       align-items: center;
       gap: 8px;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
 
     input {
       background-color: transparent;
