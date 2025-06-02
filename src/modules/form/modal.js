@@ -1,16 +1,13 @@
+const btnAbrir = document.querySelector(".button_schedule");
 const modal = document.getElementById("modal");
-const openBtn = document.querySelector(".button_schedule");
+const overlay = document.getElementById("overlay");
 
-// Abrir modal
-openBtn.addEventListener("click", () => {
-  modal.classList.remove("hidding");
+btnAbrir.addEventListener("click", () => {
   modal.classList.add("active");
+  overlay.classList.add("active");
 });
 
-// Fechar modal ao clicar fora do conteúdo do form
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.classList.remove("active");
-    modal.classList.add("hidding");
-  }
+overlay.addEventListener("click", () => {
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
 });
