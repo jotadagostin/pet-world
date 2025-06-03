@@ -70,6 +70,9 @@
               color: var(--color-content-secondary);
               cursor: pointer;
             }
+            button:hover {
+              border-bottom: 1px solid gray;
+            }
           }
           .client_need {
             justify-content: space-between;
