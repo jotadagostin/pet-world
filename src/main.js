@@ -5,6 +5,7 @@ import "./libs/dayjs";
 
 //JS
 import "./modules/form/modal";
+import "./modules/form/add-schedule";
 
 //css
 import "./styles/global.css";
