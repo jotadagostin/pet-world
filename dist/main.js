@@ -27,7 +27,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayj
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/form/index.css */ \"./src/styles/form/index.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_section_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/section.css */ \"./src/styles/section.css\");\n\n\n//Config dayjs:\n\n\n//JS\n\n//css\n\n\n\n\n\n//# sourceURL=webpack://world-pet/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _modules_form_modal_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/form/modal.js */ \"./src/modules/form/modal.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/form/index.css */ \"./src/styles/form/index.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_section_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/section.css */ \"./src/styles/section.css\");\n\n\n//Config dayjs:\n\n\n//JS\n\n\n//css\n\n\n\n\n\n//# sourceURL=webpack://world-pet/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/form/modal.js":
+/*!***********************************!*\
+  !*** ./src/modules/form/modal.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   closeModal: () => (/* binding */ closeModal)\n/* harmony export */ });\nvar newScheduleButtons = document.querySelector(\".new-schedule\");\nvar modal = document.getElementById(\"modal\");\nvar container = document.querySelector(\".container\");\nvar newScheduleButtonContainer = document.querySelector(\"#new-schedule-container\");\nnewScheduleButtons.forEach(function (button) {\n  return button.addEventListner(\"click\", function () {\n    modal.classList.remove(\"hidding\");\n    container.classList.add(\"blur\");\n    hideButton(button);\n  });\n});\nvar closeModalIcon = document.querySelector(\"#close-modal\");\ncloseModalIcon.onclick = closeModal;\nfunction closeModal() {\n  modal.classList.add(\"hiding\");\n  container.classList.remove(\"blur\");\n  showButtons();\n}\nfunction hideButton(button) {\n  button.classList.add(\"hiding\");\n  newScheduleButtonContainer.classList.add(\"hiding\");\n}\nfunction showButtons() {\n  newScheduleButtons.forEach(function (button) {\n    button.classList.remove(\"hiding\");\n    newScheduleButtonContainer.classList.remove(\"hiding\");\n  });\n}\n\n//# sourceURL=webpack://world-pet/./src/modules/form/modal.js?");
 
 /***/ }),
 
