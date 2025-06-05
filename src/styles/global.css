@@ -5,16 +5,15 @@
 }
 
 :root {
-  /* Colors: */
-  --color-content-primary: #ffffff;
+  --color-content-primary: #fff;
   --color-content-secondary: #98959d;
-  --color-content-tertiary: #666666;
-  -color-content-brand: #9282fa;
+  --color-content-tertiary: #666;
+  --color-content-brand: #9282fa;
 
   --color-background-primary: #151515;
   --color-background-secondary: #1e1e1e;
   --color-background-tertiary: #23242c;
-  --color-background-brande: #9282fa;
+  --color-background-brand: #9282fa;
   --color-background-highlights: #bdb4fa;
 
   --color-border-primary: #3e3c41;
@@ -29,10 +28,8 @@
   --color-accent-orange: #f09102;
   --color-accent-orange-light: #75501b;
 
-  /* Typography */
   --font-family-title: "Inter Tight", sans-serif;
   --font-title: 700 1.5rem/2rem var(--font-family-title);
-  --font-button: 700 1rem/1.5rem var(--font-family-title);
 
   --font-family-default: "Inter", sans-serif;
   --font-paragraph-medium: 500 0.875rem/1.5rem var(--font-family-default);
@@ -45,11 +42,28 @@
 }
 
 body {
-  flex-direction: row;
-  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   background-color: #14151d;
+  color: var(--color-content-primary);
 }
 
-ul {
-  list-style: none;
+.container {
+  max-width: 85.375rem;
+  margin: auto;
+}
+
+#logo {
+  background-color: #2e2c30;
+  display: inline-block;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  border-bottom-right-radius: 0.75rem;
+  position: absolute;
+}
+
+.hiding {
+  display: none !important;
 }
