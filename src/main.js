@@ -10,4 +10,6 @@ import "./styles/main.css";
 import "./styles/section.css";
 
 //JS
-import "./modules/form/modal";
+import "./modules/form/modal.js";
+import "./modules/form/submit.js";
+import "./modules/page-load.js";
