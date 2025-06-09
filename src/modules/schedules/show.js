@@ -1,4 +1,4 @@
-import { deleteSchedule } from "../../services/delete-schedule.js";
+import { deleteSchedule } from "../../services/delete-schedule";
 
 const periodMorningSchedules = document.querySelector(
   ".period.morning > .schedules"
@@ -7,7 +7,7 @@ const periodAfternoonSchedules = document.querySelector(
   ".period.afternoon > .schedules"
 );
 const periodNightSchedules = document.querySelector(
-  ".period.night > .schedules"
+  ".period.evening > .schedules"
 );
 
 function clearPeriods() {
@@ -18,7 +18,9 @@ function clearPeriods() {
 
 export function showSchedules(schedules) {
   clearPeriods();
+
   console.log(schedules);
+
   schedules.forEach((schedule) => buildSchedule(schedule));
 }
 
@@ -50,11 +52,11 @@ function buildSchedule(schedule) {
 
   const tutorNameSpan = document.createElement("span");
   tutorNameSpan.classList.add("person-name");
-  tutorNameSpan.textContent = `/${schedule.tutor_name}`;
+  tutorNameSpan.textContent = ` / ${schedule.tutor_name}`;
 
   const petNameSpan = document.createElement("span");
   petNameSpan.classList.add("pet-name");
-  petNameSpan.textContent = `/${schedule.pet_name}`;
+  petNameSpan.textContent = schedule.pet_name;
 
   const serviceDescriptionSpan = document.createElement("span");
   serviceDescriptionSpan.classList.add("procedure");
@@ -82,7 +84,7 @@ function buildSchedule(schedule) {
   const time = String(schedule.time.replace(":", ""));
 
   if (time < 1200) {
-    periodAfternoonSchedules.append(scheduleDiv);
+    periodMorningSchedules.append(scheduleDiv);
   } else if (time < 1800) {
     periodAfternoonSchedules.append(scheduleDiv);
   } else {
