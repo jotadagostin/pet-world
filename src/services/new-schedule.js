@@ -27,6 +27,6 @@ export async function newSchedule({
     });
   } catch (error) {
     console.log(error);
-    alert("Nao foi possivel agendar. Tente novamente maist tarde");
+    alert("Unable to schedule. Please try again later");
   }
 }

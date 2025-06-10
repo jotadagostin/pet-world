@@ -64,10 +64,12 @@ function buildSchedule(schedule) {
 
   const removeScheduleSpan = document.createElement("span");
   removeScheduleSpan.classList.add("remove-schedule");
-  removeScheduleSpan.textContent = "Remover agendamento";
+  removeScheduleSpan.textContent = "Remove schedule";
 
   removeScheduleSpan.onclick = () => {
-    const isConfirm = confirm("Tem certeza que deseja cancelar o agendamento?");
+    const isConfirm = confirm(
+      "Are you sure you want to cancel the appointment?"
+    );
     if (isConfirm) {
       deleteSchedule(schedule.id);
       removeScheduleSpan.closest("div.schedule").outerHTML = "";

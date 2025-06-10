@@ -10,6 +10,8 @@ export async function getSchedules(date) {
     return schedulesFilterByDate;
   } catch (error) {
     console.log(error);
-    alert("Nao foi possivel buscar o agendamento do dia selecionado.");
+    alert(
+      "It was not possible to search for the appointment for the selected day."
+    );
   }
 }

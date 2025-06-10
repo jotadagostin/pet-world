@@ -19,31 +19,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-   <div id="logo">
-    <img src="./src/assets/logo-with-text.svg" alt="logotipo">
-  </div>
-  <div class="container">
-    <main>
-      <header>
-        <div>
-          <h1>Sua agenda</h1>
-          <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
-        </div>
-        <div id="date-filter">
-          <input type="date" id="date-filter-input" name="date" />
-        </div>
-      </header>
-      <section class="period morning">
-        <div class="period-title">
+    <div id="logo">
+      <img src="./src/assets/logo-with-text.svg" alt="logotipo" />
+    </div>
+    <div class="container">
+      <main>
+        <header>
           <div>
-            <img src="./src/assets/morning-color.svg" alt="ícone manhã">
-            <h2>Manhã</h2>
+            <h1>Your schedule</h1>
+            <p>
+              Here you can see all clients and services scheduled for today.
+            </p>
           </div>
-          <span>09h-12h</span>
-        </div>
-        <div class="divisor"></div>
-        <div class="schedules">
-          <!-- <div class="schedule">
+          <div id="date-filter">
+            <input type="date" id="date-filter-input" name="date" />
+          </div>
+        </header>
+        <section class="period morning">
+          <div class="period-title">
+            <div>
+              <img src="./src/assets/morning-color.svg" alt="ícone manhã" />
+              <h2>Morning</h2>
+            </div>
+            <span>09h-12h</span>
+          </div>
+          <div class="divisor"></div>
+          <div class="schedules">
+            <!-- <div class="schedule">
             <span>
               <span class="time">09:00</span>
               <span class="names">
@@ -52,21 +54,21 @@
               </span>
               <span class="procedure">Vacinação</span>
             </span>
-            <span class="remove-schedule">Remover agendamento</span>
+            <span class="">Remove schedule</span>
           </div> -->
-        </div>
-      </section>
-      <section class="period afternoon">
-        <div class="period-title">
-          <div>
-            <img src="./src/assets/afternoon-color.svg" alt="ícone tarde">
-            <h2>Tarde</h2>
           </div>
-          <span>13h-18h</span>
-        </div>
-        <div class="divisor"></div>
-        <div class="schedules">
-          <!-- <div class="schedule border-bottom">
+        </section>
+        <section class="period afternoon">
+          <div class="period-title">
+            <div>
+              <img src="./src/assets/afternoon-color.svg" alt="ícone tarde" />
+              <h2>Afternoon</h2>
+            </div>
+            <span>13h-18h</span>
+          </div>
+          <div class="divisor"></div>
+          <div class="schedules">
+            <!-- <div class="schedule border-bottom">
             <span>
               <span class="time">13:00</span>
               <span class="names">
@@ -75,7 +77,7 @@
               </span>
               <span class="procedure">Corte de Unhas</span>
             </span>
-            <span class="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remove schedule</span>
           </div>
           <div class="schedule border-bottom">
             <span>
@@ -86,7 +88,7 @@
               </span>
               <span class="procedure">Aplicação de Anti-pulgas</span>
             </span>
-            <span class="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remove schedule</span>
           </div>
           <div class="schedule">
             <span>
@@ -97,21 +99,21 @@
               </span>
               <span class="procedure">Tosa Higiênica</span>
             </span>
-            <span class="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remove schedule</span>
           </div> -->
-        </div>
-      </section>
-      <section class="period evening">
-        <div class="period-title">
-          <div>
-            <img src="./src/assets/night-color.svg" alt="ícone noite">
-            <h2>Noite</h2>
           </div>
-          <span>19h-21h</span>
-        </div>
-        <div class="divisor"></div>
-        <div class="schedules">
-          <!-- 
+        </section>
+        <section class="period evening">
+          <div class="period-title">
+            <div>
+              <img src="./src/assets/night-color.svg" alt="ícone noite" />
+              <h2>Evening</h2>
+            </div>
+            <span>19h-21h</span>
+          </div>
+          <div class="divisor"></div>
+          <div class="schedules">
+            <!-- 
           <div class="schedule">
             <span>
               <span class="time">20:00</span>
@@ -121,51 +123,76 @@
               </span>
               <span class="procedure">Limpeza de Dentes</span>
             </span>
-            <span class="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remove schedule</span>
           </div>
            -->
-        </div>
-      </section>
-    </main>
-  </div>
-  <div id="modal" class="hiding">
-    <form>
-      <img id="close-modal" src="./src/assets/x.svg" alt="ícone fechar">
-      <h2>Agende um atendimento</h2>
-      <p>Preencha os dados do cliente para realizar o agendamento:</p>
-      <div class="input-wrapper">
-        <label for="tutor-name">Nome do tutor</label>
-        <input name="tutor-name" id="tutor-name" type="text" placeholder="Helena Souza" required />
-      </div>
-      <div class="input-wrapper">
-        <label for="pet-name">Nome do pet</label>
-        <input name="pet-name" id="pet-name" type="text" placeholder="Cheddar" required />
-      </div>
-      <div class="input-wrapper">
-        <label for="fone">Telefone</label>
-        <input name="fone" id="fone" type="tel" placeholder="(00) 0 0000-0000" required />
-      </div>
-      <div class="input-wrapper">
-        <label for="service-description">Descrição do serviço</label>
-        <textarea name="service-description" id="service-description" placeholder="Banho e tosa" rows="2" required></textarea>
-      </div>
-      <div class="date-and-time">
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="modal" class="hiding">
+      <form>
+        <img id="close-modal" src="./src/assets/x.svg" alt="ícone fechar" />
+        <h2>Schedule an appointment</h2>
+        <p>Fill in the customer's details to schedule an appointment:</p>
         <div class="input-wrapper">
-          <label for="date">Data</label>
-          <input type="date" id="date" name="date" required />
+          <label for="tutor-name">Tutor`s name </label>
+          <input
+            name="tutor-name"
+            id="tutor-name"
+            type="text"
+            placeholder="Helena Souza"
+            required
+          />
         </div>
         <div class="input-wrapper">
-          <label for="time">Hora</label>
-          <input type="time" id="time" name="time" required />
+          <label for="pet-name">Pet`s name</label>
+          <input
+            name="pet-name"
+            id="pet-name"
+            type="text"
+            placeholder="Cheddar"
+            required
+          />
         </div>
-      </div>
-      <button type="submit">AGENDAR</button>
-    </form>
-  </div>
-  <button class="new-schedule" id="new-schedule-desktop">NOVO AGENDAMENTO</button>
-  <div id="new-schedule-container">
-    <button class="new-schedule">NOVO AGENDAMENTO</button>
-  </div>
-</body>
+        <div class="input-wrapper">
+          <label for="fone">Telephone</label>
+          <input
+            name="fone"
+            id="fone"
+            type="number"
+            placeholder="(00) 000000-0000"
+            required
+            title="Type only numbers please"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="service-description">Service description </label>
+          <textarea
+            name="service-description"
+            id="service-description"
+            placeholder="Bath and grooming
+"
+            rows="2"
+            required
+          ></textarea>
+        </div>
+        <div class="date-and-time">
+          <div class="input-wrapper">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="time">Hour</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+        </div>
+        <button type="submit">SCHEDULE</button>
+      </form>
+    </div>
+    <button class="new-schedule" id="new-schedule-desktop">NEW SCHEDULE</button>
+    <div id="new-schedule-container">
+      <button class="new-schedule">NEW SCHEDULE</button>
+    </div>
   </body>
 </html>
